@@ -1,11 +1,13 @@
 import java.util.Scanner;
-
+/*
+    https://cote.inflearn.com/contest/10/problem/01-03
+ */
 public class Exam_01_03 {
     public static String solution_1(String str){
         String answer = "";
         int min = Integer.MIN_VALUE;
         /*
-            공백으로 String 분할하고 분할된 문자열들의 길이를 비교한다.
+            공백으로 String을 분할하고 분할된 문자열들의 길이를 비교한다.
          */
         String[] split_str = str.split(" ");
 
@@ -27,17 +29,17 @@ public class Exam_01_03 {
             공백을 찾아서 pos에 Index를 저장.
          */
         while((pos = str.indexOf(' ')) != -1){
-            // 첫 번째부터 공백까지 String을 분해함.
+            // 첫 번째 문자부터 공백까지 String을 분해함.
             String temp = str.substring(0, pos);
             int len = temp.length();
 
-            // >= 를 사용할 경우, 뒤에서 같은 길이가 발견되면 갱신이 된다.
+            // >= 를 사용할 경우, 나중에 같은 길이의 문자열이 발견되면 갱신된다.
             if(len > min){
                 min = len;
                 answer = temp;
             }
 
-            // 공백부터 시작했으므로 Null까지 잘라냄.
+            // 공백부터 시작했으므로 한 칸 떨어진 위치부터 Null까지 문자열을 잘라냄.
             str = str.substring(pos + 1);
         }
 

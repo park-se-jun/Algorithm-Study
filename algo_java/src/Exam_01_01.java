@@ -1,9 +1,15 @@
 import java.util.Scanner;
-
+/*
+    https://cote.inflearn.com/contest/10/problem/01-01
+ */
 public class Exam_01_01 {
     public static int solution(String str, char c){
         int answer = 0;
 
+        /*
+            대소문자 구별을 하지 않으므로, 입력 문자들을 모두
+            소문자로 변환함.
+         */
         str = str.toLowerCase();
         c = Character.toLowerCase(c);
 
