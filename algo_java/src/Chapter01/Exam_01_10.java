@@ -1,9 +1,6 @@
 package Chapter01;
 
 import java.util.Scanner;
-/*
-    https://cote.inflearn.com/contest/10/problem/01-10
- */
 public class Exam_01_10 {
     public static int[] solution(String str, char target){
         int[] answer = new int[str.length()];

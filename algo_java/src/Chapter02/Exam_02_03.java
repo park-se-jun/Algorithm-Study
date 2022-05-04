@@ -1,7 +1,6 @@
 package Chapter02;
 
 import java.util.Scanner;
-
 public class Exam_02_03 {
     public static char[] solution(int n, int[] player_A, int[] player_B){
         char[] answer = new char[n];

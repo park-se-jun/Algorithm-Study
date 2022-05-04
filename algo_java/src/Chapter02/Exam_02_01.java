@@ -1,7 +1,6 @@
 package Chapter02;
 import java.util.ArrayList;
 import java.util.Scanner;
-
 public class Exam_02_01 {
     public static ArrayList<Integer> solution(int n, int[] array){
         ArrayList<Integer> answer = new ArrayList<Integer>();

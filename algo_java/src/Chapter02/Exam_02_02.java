@@ -1,7 +1,6 @@
 package Chapter02;
 
 import java.util.Scanner;
-
 public class Exam_02_02 {
     public static int solution(int n, int[] array){
         int answer = 1, max_high = array[0];
