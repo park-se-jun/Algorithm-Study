@@ -35,8 +35,8 @@ public class Exam_03_01 {
         for(int j = 0; j < m; j++)
             arr2[j] = input.nextInt();
 
-        for(int i : solution(n, m, arr1, arr2)){
-            System.out.print(i + " ");
+        for(int k : solution(n, m, arr1, arr2)){
+            System.out.print(k + " ");
         }
     }
 
