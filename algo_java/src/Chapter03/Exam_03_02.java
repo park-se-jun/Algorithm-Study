@@ -11,11 +11,13 @@ public class Exam_03_02 {
         Arrays.sort(arr1);
         Arrays.sort(arr2);
 
+        // p1과 p2 중에 하나가 배열의 끝을 넘어가면 종료
         while(p1 < n && p2 < m){
             if(arr1[p1] == arr2[p2]) {
                 answer.add(arr1[p1++]);
                 p2++;
             }
+            // 두 배열이 정렬되어 있으니 첫 번째 배열의 값이 작으면 다음 값으로 넘어감
             else if(arr1[p1] < arr2[p2]) p1++;
             else p2++;
         }
