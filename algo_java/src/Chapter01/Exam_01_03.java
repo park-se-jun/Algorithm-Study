@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Exam_01_03 {
     public static String solution_1(String str){
         String answer = "";
-        int min = Integer.MIN_VALUE;
+        int max = Integer.MIN_VALUE;
         /*
             공백으로 String을 분할하고 분할된 문자열들의 길이를 비교한다.
          */
@@ -15,8 +15,8 @@ public class Exam_01_03 {
 
         for(String s : split_str){
             int len = s.length();
-            if(min < len){
-                min = len;
+            if(max < len){
+                max = len;
                 answer = s;
             }
         }
@@ -26,7 +26,7 @@ public class Exam_01_03 {
 
     public static String solution_2(String str){
         String answer = "";
-        int min = Integer.MIN_VALUE, pos;
+        int max = Integer.MIN_VALUE, pos;
         /*
             공백을 찾아서 pos에 Index를 저장.
          */
@@ -36,8 +36,8 @@ public class Exam_01_03 {
             int len = temp.length();
 
             // >= 를 사용할 경우, 나중에 같은 길이의 문자열이 발견되면 갱신된다.
-            if(len > min){
-                min = len;
+            if(len > max){
+                max = len;
                 answer = temp;
             }
 
@@ -46,8 +46,8 @@ public class Exam_01_03 {
         }
 
         // 마지막 단어가 최장길이인 경우에 대한 처리.
-        if(str.length() > min)
-            answer = str;
+//        if(str.length() > max)
+//            answer = str;
 
         return answer;
 

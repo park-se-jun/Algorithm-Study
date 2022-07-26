@@ -1,6 +1,9 @@
 package Chapter01;
 
 import java.util.Scanner;
+/*
+    https://cote.inflearn.com/contest/10/problem/01-06
+ */
 public class Exam_01_06 {
     public static String solution_1(String str){
         String answer = "";

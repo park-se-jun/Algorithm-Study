@@ -1,12 +1,16 @@
 package Chapter01;
 
 import java.util.Scanner;
+/*
+    https://cote.inflearn.com/contest/10/problem/01-08
+ */
 public class Exam_01_08 {
     public static String solution(String str){
         String answer = "NO";
         /*
             대소문자를 구별하지 않으므로, 문자열을 대문자로 바꾸고 알파벳이 아닌 문자는
             모두 공백으로 변환.
+			(replaceAll 메서드는 정규식 사용이 가능함. replace 메서드는 불가.)
          */
         str = str.toUpperCase().replaceAll("[^A-Z]", "");
 
@@ -22,7 +26,7 @@ public class Exam_01_08 {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        String str = input.next();
+        String str = input.nextLine();
         System.out.println(solution(str));
     }
 }

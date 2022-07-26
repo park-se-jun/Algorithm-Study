@@ -1,6 +1,9 @@
 package Chapter01;
 
 import java.util.Scanner;
+/*
+    https://cote.inflearn.com/contest/10/problem/01-09
+ */
 public class Exam_01_09 {
     public static int solution_1(String str){
         int answer = 0;
@@ -29,10 +32,21 @@ public class Exam_01_09 {
         return Integer.parseInt(answer);
     }
 
+    public static int solution_3(String str){
+        int answer = 0;
+        /*
+            replaceAll 메서드의 정규식을 통하여 문자열 변환.
+        */
+        str = str.replaceAll("[^0-9]", "");
+        answer = Integer.parseInt(str);
+        return answer;
+    }
+
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        String str = input.next();
+        String str = input.nextLine();
         System.out.println(solution_1(str));
         System.out.println(solution_2(str));
+        System.out.println(solution_3(str));
     }
 }

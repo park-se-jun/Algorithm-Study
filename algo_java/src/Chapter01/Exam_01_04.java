@@ -2,6 +2,9 @@ package Chapter01;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+/*
+    https://cote.inflearn.com/contest/10/problem/01-04
+ */
 public class Exam_01_04 {
     public static ArrayList<String> solution_1(int n, String[] str){
         ArrayList<String> answer = new ArrayList<>();

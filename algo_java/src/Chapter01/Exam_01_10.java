@@ -31,7 +31,9 @@ public class Exam_01_10 {
             answer 배열에 넣음.
          */
         for(int i = str.length() - 1; i >= 0; i--){
-            if(str.charAt(i) == target) position = 0;
+            if(str.charAt(i) == target) {
+                answer[i] = position = 0;
+            }
 
             else{
                 position++;
