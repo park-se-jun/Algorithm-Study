@@ -31,8 +31,8 @@ public class Chap01Test {
     @Test
     void problem04(){
         String[] input = {"good", "Time", "Big"};
-        String[] answer = Chap01_04.solution(input);
-        Assertions.assertEquals(new String[]{"doog", "emiT", "giB"}, answer);
+        String[] answer = Chap01_04.solution(3, input);
+        Assertions.assertArrayEquals(new String[]{"doog", "emiT", "giB"}, answer);
     }
 
     @Test
