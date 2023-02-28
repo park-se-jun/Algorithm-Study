@@ -12,7 +12,8 @@ public class Chap01Test {
 
     @Test
     void problem02(){
-
+        String answer = Chap01_02.solution("StuDY");
+        Assertions.assertEquals("sTUdy", answer);
     }
 
     @Test
