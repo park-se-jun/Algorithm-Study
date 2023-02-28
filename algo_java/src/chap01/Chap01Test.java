@@ -1,11 +1,13 @@
 package chap01;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class chap01Test {
+public class Chap01Test {
     @Test
     void problem01(){
-
+        int answer = Chap01_01.solution("Computercooler", 'c');
+        Assertions.assertEquals(2, answer);
     }
 
     @Test
