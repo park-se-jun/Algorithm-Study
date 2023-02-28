@@ -23,6 +23,9 @@ public class Chap01Test {
     void problem03(){
         String answer = Chap01_03.solution("it is time to study");
         Assertions.assertEquals("study", answer);
+
+        answer = Chap01_03.solution("banana java monkey");
+        Assertions.assertEquals("banana", answer);
     }
 
     @Test
