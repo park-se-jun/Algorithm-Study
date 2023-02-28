@@ -16,4 +16,22 @@ public class Chap01_02 {
 
         return answer.toString();
     }
+
+    public static String solution2(String s) {
+        StringBuilder answer = new StringBuilder();
+
+        for(char c : s.toCharArray()){
+            if(c >= 65 && c <= 90){
+                char temp = (char) (c + 32);
+                answer.append(temp);
+            }
+
+            else{
+                char temp = (char) (c - 32);
+                answer.append(temp);
+            }
+        }
+
+        return answer.toString();
+    }
 }
