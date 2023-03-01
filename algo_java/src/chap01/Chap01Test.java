@@ -48,6 +48,9 @@ public class Chap01Test {
     void problem06(){
         String answer = Chap01_06.solution("ksekkset");
         Assertions.assertEquals("kset", answer);
+
+        answer = Chap01_06.solution("abcaabtk");
+        Assertions.assertEquals("abctk", answer);
     }
 
     @Test
