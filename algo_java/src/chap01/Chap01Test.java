@@ -64,10 +64,10 @@ public class Chap01Test {
 
     @Test
     void problem08(){
-        String answer = Chap01_07.solution("found7, time: study; Yduts; emit, 7Dnuof");
+        String answer = Chap01_08.solution("found7, time: study; Yduts; emit, 7Dnuof");
         Assertions.assertEquals("YES", answer);
 
-        answer = Chap01_07.solution("time: study; Yduts; abcd");
+        answer = Chap01_08.solution("time: study; Yduts; abcd");
         Assertions.assertEquals("NO", answer);
     }
 
