@@ -74,7 +74,8 @@ public class Chap01Test {
 
     @Test
     void problem09(){
-
+        int answer = Chap01_09.solution("g0en2T0s8eSoft");
+        Assertions.assertEquals(208, answer);
     }
 
     @Test
