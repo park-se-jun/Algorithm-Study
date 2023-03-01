@@ -81,7 +81,7 @@ public class Chap01Test {
     @Test
     void problem10(){
         int[] answer = Chap01_10.solution("teachermode", 'e');
-        Assertions.assertEquals(new int[]{1, 0, 1, 2, 1, 0, 1, 2, 2, 1, 0}, answer);
+        Assertions.assertArrayEquals(new int[]{1, 0, 1, 2, 1, 0, 1, 2, 2, 1, 0}, answer);
     }
 
     @Test
