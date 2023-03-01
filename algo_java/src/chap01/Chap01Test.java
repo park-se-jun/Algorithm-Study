@@ -55,7 +55,11 @@ public class Chap01Test {
 
     @Test
     void problem07(){
+        String answer = Chap01_07.solution("gooG");
+        Assertions.assertEquals("YES", answer);
 
+        answer = Chap01_07.solution("AbcD");
+        Assertions.assertEquals("NO", answer);
     }
 
     @Test
