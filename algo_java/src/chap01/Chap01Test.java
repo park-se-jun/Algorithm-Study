@@ -39,6 +39,9 @@ public class Chap01Test {
     void problem05(){
         String answer = Chap01_05.solution("a#b!GE*T@S");
         Assertions.assertEquals("S#T!EG*b@a", answer);
+
+        answer = Chap01_05.solution("a@xzq%t");
+        Assertions.assertEquals("t@qzx%a", answer);
     }
 
     @Test
