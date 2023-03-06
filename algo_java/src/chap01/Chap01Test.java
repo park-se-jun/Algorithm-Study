@@ -86,11 +86,13 @@ public class Chap01Test {
 
     @Test
     void problem11(){
-
+        String answer = Chap01_11.solution("KKHSSSSSSSE");
+        Assertions.assertEquals("K2HS7E", answer);
     }
 
     @Test
     void problem12(){
-
+        String answer = Chap01_12.solution(4, "#****###**#####**#####**##**");
+        Assertions.assertEquals("COOL", answer);
     }
 }

@@ -1,12 +1,9 @@
 package chap01;
-
-import java.util.Arrays;
-
 public class Chap01_10 {
     public static int[] solution(String s, char t){
-        int[] answer=new int[s.length()];
+        int[] answer = new int[s.length()];
 
-        int p=1000;
+        int p = 1000;
 
         for(int i = 0; i < s.length(); i++){
             if(s.charAt(i) == t){
