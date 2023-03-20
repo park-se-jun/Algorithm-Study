@@ -14,8 +14,13 @@ public class Chap02Test {
     @Test
     void Problem02(){
         int n = 8;
-        int[] students = {130, 135, 148, 140, 145, 150, 150, 153};
-        int answer = Chap02_02.solution(n, students);
+        int[] students1 = {130, 135, 148, 140, 145, 150, 150, 153};
+        int[] students2 = {120, 110, 150, 140, 170, 180, 180, 165};
+
+        int answer = Chap02_02.solution(n, students1);
         Assertions.assertEquals(5, answer);
+
+        answer = Chap02_02.solution(n, students2);
+        Assertions.assertEquals(4, answer);
     }
 }
