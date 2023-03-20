@@ -10,4 +10,12 @@ public class Chap02Test {
         int[] answer = Chap02_01.solution(numbers.length, numbers);
         Assertions.assertArrayEquals(new int[]{7, 9, 6, 12}, answer);
     }
+
+    @Test
+    void Problem02(){
+        int n = 8;
+        int[] students = {130, 135, 148, 140, 145, 150, 150, 153};
+        int answer = Chap02_02.solution(n, students);
+        Assertions.assertEquals(5, answer);
+    }
 }
