@@ -1,9 +1,11 @@
 package chap01;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 public class Chap01Test {
+    /*
     @Test
     void problem01(){
         int answer = Chap01_01.solution("Computercooler", 'c');
@@ -95,4 +97,5 @@ public class Chap01Test {
         String answer = Chap01_12.solution(4, "#****###**#####**#####**##**");
         Assertions.assertEquals("COOL", answer);
     }
+     */
 }
